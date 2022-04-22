@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
+import ExtraSection from './ExtraSection';
 import Footer from './Footer';
 import Header from './Header';
 
@@ -11,6 +12,7 @@ const Home = () => {
             <Header></Header>
             <Banner></Banner>
             <Services></Services>
+            <ExtraSection></ExtraSection>
             <Footer></Footer>
         </div>
     );
