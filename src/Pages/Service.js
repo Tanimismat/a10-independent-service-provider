@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
     console.log(service)
@@ -11,10 +12,10 @@ const Service = ({ service }) => {
                     <div className="card-body">
                         <h5 className="card-title">{name}</h5>
                         <p>Price: ${price}</p>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p className="card-text">{description}</p>
                     </div>
                     <div className="card-footer">
-                        <button>Checkout</button>
+                        <button><Link to='/checkout'>Checkout</Link></button>
                     </div>
                 </div>
             </div>
