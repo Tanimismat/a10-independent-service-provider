@@ -56,26 +56,28 @@ const Login = () => {
     return (
         <div>
             <Header></Header>
-            <h2>login</h2>
-            <Form onSubmit={handleSubmit}>
+            <div className='w-50 mx-auto mt-3'>
+                <h2 className='text-center purple'>Please Login</h2>
+                <Form onSubmit={handleSubmit}>
 
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    </Form.Group>
 
-                <Button variant="primary" type="submit">
-                    Login
-                </Button>
-            </Form>
-            {errorElement}
-            <p>New to ....... ? <Link to="/register" className='pe-auto' onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forget Password? <button className='btn btn-link pe-auto text-primary text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
-            <SocialLogin></SocialLogin>
-            <ToastContainer />
+                    <Button className='login-button mx-auto d-block my-3' type="submit">
+                        Login
+                    </Button>
+                </Form>
+                {errorElement}
+                <p>New to YOUR SUCCESS WIZARD ? <Link to="/register" className='pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
+                <p>Forget Password? <button className='btn btn-link pe-auto text-primary text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
+                <SocialLogin></SocialLogin>
+                <ToastContainer />
+            </div>
         </div>
     );
 };

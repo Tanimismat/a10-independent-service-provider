@@ -9,7 +9,6 @@ const Registration = () => {
     const nameRef = useRef('');
     const emailRef = useRef('');
     const passwordRef = useRef('');
-    const checkboxRef = useRef();
 
     const navigate = useNavigate()
 
@@ -17,10 +16,7 @@ const Registration = () => {
         navigate('/login');
     }
     const [
-        createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
+        createUserWithEmailAndPassword
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const handleRegister = (event) => {
         event.preventDefault();
@@ -35,29 +31,27 @@ const Registration = () => {
     return (
         <div>
             <Header></Header>
-            <h2>Please register</h2>
-            <Form onSubmit={handleRegister}>
+            <div className='w-50 mx-auto mt-3'>
+                <h2 className='text-center purple'>Please register</h2>
+                <Form onSubmit={handleRegister}>
 
-                <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Control ref={nameRef} type="text" placeholder="Enter your name" />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Control ref={nameRef} type="text" placeholder="Enter your name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
-                </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check ref={checkboxRef} type="checkbox" label="Accept terms and condition" />
-                </Form.Group>
-
-                <Button variant="primary" type="submit">
-                    Register
-                </Button>
-            </Form>
-            <p>Already have an account? <Link to="/login" className='pe-auto' onClick={navigateLogin}>Please Login.</Link></p>
+                    <Button className='login-button mx-auto d-block my-3' variant="primary" type="submit">
+                        Register
+                    </Button>
+                </Form>
+                <p>Already have an account? <Link className='text-primary text-decoration-none' to="/login" onClick={navigateLogin}>Please Login.</Link></p>
+            </div>
         </div>
     );
 };

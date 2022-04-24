@@ -73,3 +73,24 @@ code {
   background-color: var(--purple);
   color: whitesmoke;
 }
+
+/* login page */
+.login-button {
+  background-color: var(--purple);
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  color: whitesmoke;
+  font-weight: 500;
+  width: 50%;
+}
+
+.socialLogIn-Button {
+  border: none;
+  background-color: var(--purple);
+  border-radius: 50px;
+  padding: 8px;
+  color: whitesmoke;
+  font-weight: 500;
+  width: 50%;
+}
