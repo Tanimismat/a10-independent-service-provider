@@ -1,6 +1,7 @@
 import React from 'react';
 import useServices from '../../Hooks/useServices';
 import Service from '../Service';
+import Header from './Header';
 
 const Services = () => {
 
@@ -10,6 +11,7 @@ const Services = () => {
 
     return (
         <div>
+            <Header></Header>
             <h2>All Services</h2>
             <div className='row row-cols-1 row-cols-md-3 g-4'>{
                 services.map(service => <Service
