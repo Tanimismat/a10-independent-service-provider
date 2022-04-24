@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import auth from '../firebase.init';
 import Header from './Home/Header';
 
 const Registration = () => {
@@ -14,11 +16,26 @@ const Registration = () => {
     const navigateLogin = () => {
         navigate('/login');
     }
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+    const handleRegister = (event) => {
+        event.preventDefault();
+        const name = nameRef.current.value;
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
+        console.log(name, email, password);
+        createUserWithEmailAndPassword(email, password);
+    }
+
     return (
         <div>
             <Header></Header>
             <h2>Please register</h2>
-            <Form>
+            <Form onSubmit={handleRegister}>
 
                 <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Control ref={nameRef} type="text" placeholder="Enter your name" />

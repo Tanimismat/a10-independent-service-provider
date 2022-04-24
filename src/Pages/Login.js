@@ -9,17 +9,30 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
+    const location = useLocation();
+
+    let from = location.state?.from?.pathname || "/";
 
     const handleSubmit = (event) => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
-        console.log("sign in ", email, password)
+        console.log("sign in ", email, password);
+        signInWithEmailAndPassword(email, password);
     };
 
     const navigateRegister = event => {
         navigate('/register')
+    }
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    if (user) {
+        navigate(from, { replace: true });
     }
     return (
         <div>
