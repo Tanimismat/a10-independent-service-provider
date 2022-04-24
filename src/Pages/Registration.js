@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../firebase.init';
 import Header from './Home/Header';
+import SocialLogin from './SocialLogin';
 
 const Registration = () => {
     const nameRef = useRef('');
