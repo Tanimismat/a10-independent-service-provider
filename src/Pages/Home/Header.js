@@ -14,23 +14,23 @@ const Header = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+            <Navbar className='navigationBar' collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
                 <Container>
-                    <Navbar.Brand as={Link} to="/">React-Bootstrap</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Brand as={Link} to="/" ><span className='white'>YOUR SUCCESS WIZARD</span></Navbar.Brand>
+                    <Navbar.Toggle className='white-bg' aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-                            <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link as={Link} to="/services"><span className='white'>Services</span></Nav.Link>
+                            <Nav.Link as={Link} to="/blogs"><span className='white'>Blogs</span></Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/about">About Me</Nav.Link>
+                            <Nav.Link as={Link} to="/about"><span className='white'>About Me</span></Nav.Link>
                             {
                                 user ?
-                                    <button onClick={handleSignOut}>Sign out</button>
+                                    <button onClick={handleSignOut} className='white signOut-button'>Sign out</button>
                                     :
                                     <Nav.Link as={Link} to="/login">
-                                        Login
+                                        <span className='white'>Log In</span>
                                     </Nav.Link>
                             }
                         </Nav>

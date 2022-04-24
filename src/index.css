@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --purple: #502d69;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -12,7 +17,59 @@ code {
     monospace;
 }
 
+/* home page */
+
 .service {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.navigationBar {
+  background-color: var(--purple) !important;
+}
+
+.white {
+  color: whitesmoke;
+}
+
+.white-bg {
+  background-color: whitesmoke;
+}
+
+.signOut-button {
+  background-color: var(--purple);
+  border: none;
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.ckeckOut-button {
+  background-color: var(--purple);
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.ckeckOut-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.extraSection-button {
+  background-color: var(--purple);
+  width: 25%;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  color: whitesmoke;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: var(--purple);
+  color: whitesmoke;
 }

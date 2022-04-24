@@ -15,12 +15,12 @@ const Service = ({ service }) => {
                 <div className="card h-100">
                     <img src={img} className="card-img-top" alt="..." />
                     <div className="card-body">
-                        <h5 className="card-title">{name}</h5>
-                        <p>Price: ${price}</p>
+                        <h5 className="card-title text-center purple fw-bold">{name}</h5>
+                        <p className='text-center purple'>Price: ${price}</p>
                         <p className="card-text">{description}</p>
                     </div>
-                    <div className="card-footer">
-                        <button onClick={() => navigateToServiceDetail(id)}><Link to='/checkout'>Checkout</Link></button>
+                    <div className="card-footer border-top-0 bg-transparent">
+                        <button className='ckeckOut-button' onClick={() => navigateToServiceDetail(id)}><Link to='/checkout' className='ckeckOut-link'>Checkout</Link></button>
                     </div>
                 </div>
             </div>

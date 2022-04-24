@@ -10,10 +10,9 @@ const Services = () => {
     const { id } = services;
 
     return (
-        <div>
-            <Header></Header>
-            <h2>All Services</h2>
-            <div className='row row-cols-1 row-cols-md-3 g-4'>{
+        <div className='my-5'>
+            <h2 className='text-center py-4 purple fw-bold'>All Services</h2>
+            <div className='row row-cols-1 row-cols-md-3 g-4 px-5'>{
                 services.map(service => <Service
                     key={id}
                     service={service}

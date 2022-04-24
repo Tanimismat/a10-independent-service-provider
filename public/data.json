@@ -1,23 +1,23 @@
 [
     {
         "id": "1",
-        "img": "https://static.wixstatic.com/media/5cf44d588bd0471aa3e31664a3d751f5.jpg/v1/fill/w_315,h_241,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5cf44d588bd0471aa3e31664a3d751f5.jpg",
+        "img": "https://www.rocketblocks.me/images/homepage/Interview-1.png",
         "name": "Interview Coaching",
-        "description": "Consequat cillum Lorem nulla nisi aute aliquip occaecat ex occaecat adipisicing commodo velit. Ipsum ad Lorem dolore sunt esse eu ipsum fugiat laborum anim cupidatat mollit nostrud. Non laborum consectetur enim elit tempor nulla. Aute adipisicing duis elit duis est. Enim in enim voluptate veniam magna. Ullamco cupidatat Lorem mollit sint. Laborum pariatur tempor fugiat ad mollit enim deserunt tempor.\r\n",
+        "description": "The right interview coach can make or break your success in your next interview...",
         "price": "749"
     },
     {
         "id": "2",
-        "img": "https://static.wixstatic.com/media/5cf44d588bd0471aa3e31664a3d751f5.jpg/v1/fill/w_315,h_241,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5cf44d588bd0471aa3e31664a3d751f5.jpg",
+        "img": "https://us.123rf.com/450wm/aquir/aquir1507/aquir150702943/42330368-personal-branding-blue-round-grunge-stamp-on-white.jpg?ver=6",
         "name": "Personal Branding Strategy",
-        "description": "Officia non mollit duis dolore officia aute. Labore sunt fugiat deserunt sint adipisicing cupidatat occaecat cupidatat occaecat ullamco adipisicing. Culpa sunt ex Lorem eu pariatur quis nisi aliquip. In dolor sit culpa est non nisi id cillum cillum cupidatat.\r\n",
+        "description": "I’m here to help you find the sweet spot that focuses on simplicity and working smart so you get maximum impact with minimal effort...",
         "price": "949"
     },
     {
         "id": "3",
-        "img": "https://static.wixstatic.com/media/5cf44d588bd0471aa3e31664a3d751f5.jpg/v1/fill/w_315,h_241,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5cf44d588bd0471aa3e31664a3d751f5.jpg",
+        "img": "https://us.123rf.com/450wm/kos911/kos9111903/kos911190300171/124213423-man-fills-in-questionnaire-resume-or-application-form-clipboard-with-leaf-in-hand-writing-business-r.jpg?ver=6",
         "name": "Resume & LinkedIn Profile Writing",
-        "description": "Quis dolor nostrud esse exercitation Lorem in enim cillum et. Excepteur excepteur et esse nulla laboris magna laborum. Ea sit voluptate ullamco laboris elit ad. Velit amet adipisicing magna cupidatat veniam amet incididunt ad exercitation nisi mollit. Esse eu non pariatur duis ullamco laboris ullamco sit nostrud duis ea.\r\n",
+        "description": "Elevate your professional presence online with an expertly-written LinkedIn profile makeover...",
         "price": "1240"
     }
 ]
