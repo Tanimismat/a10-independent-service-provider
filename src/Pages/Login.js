@@ -40,7 +40,7 @@ const Login = () => {
                 </Button>
 
             </Form>
-            <p>New to ....... ? <span onClick={navigateRegister}>Please Register</span></p>
+            <p>New to ....... ? <Link to="/register" className='pe-auto' onClick={navigateRegister}>Please Register</Link></p>
         </div>
     );
 };
