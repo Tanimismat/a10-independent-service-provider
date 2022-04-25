@@ -94,3 +94,13 @@ code {
   font-weight: 500;
   width: 50%;
 }
+
+.proceedCheckOut-button {
+  border: none;
+  background-color: var(--purple);
+  border-radius: 50px;
+  padding: 8px;
+  color: whitesmoke;
+  font-weight: 500;
+  width: 50%;
+}

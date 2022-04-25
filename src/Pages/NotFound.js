@@ -3,7 +3,7 @@ import React from 'react';
 const NotFound = () => {
     return (
         <div>
-            <h2>not found</h2>
+            <img className='w-75 mx-auto d-block' src={'https://howfix.net/wp-content/uploads/2018/02/sIaRmaFSMfrw8QJIBAa8mA-article.png'} alt="" />
         </div>
     );
 };
